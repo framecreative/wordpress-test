@@ -76,7 +76,7 @@ Meals listing - page 2
 
 Meals listing - filtered by vegan meal type
 
-![picture](screenshots/meals-listing-mobile.png)
+[Meals listing - small screen size](screenshots/meals-listing-mobile.png)
 
-Meals listing - small screen size
+
 
