@@ -84,3 +84,11 @@ It also runs [Autoprefixer](https://github.com/postcss/autoprefixer) so you don'
 This build task will likewise process any file in the root of the scripts directory as a source. It will be
 run through [Webpack](https://webpack.js.org/) and [Babel](https://babeljs.io/), so files will be modularised and
 ES2015 features like native imports and classes are supported. 
+
+
+
+## Returning your work
+
+Your work can be returned by zipping up the folder and sending it back through to us. We'd recommend removing the `.env` file
+first since it has local environment credentials in it. We'd also recommend deleting dependencies and built files; like `vendor`, `node_modules`,
+`site/wordpress`, `site/content/plugins` and `site/content/themes/wordpress-test/built`. This will cut down on the file size.
