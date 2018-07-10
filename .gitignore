@@ -13,6 +13,8 @@ site/.htaccess
 site/wordpress
 site/content/*
 
+!site/content/uploads
+
 !site/content/themes
 site/content/themes/**/built/*
 
