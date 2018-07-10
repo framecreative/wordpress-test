@@ -42,13 +42,10 @@ For development we'd recommend running `yarn start` which will watch assets
 and compile on change. It will also start BrowserSync which hotloads CSS changes and can be accessed at [localhost:3000](http://localhost:3000/).
 
 
-
 ## The Task
 
 The West Oak Hotel website is currently very simple. It has a homepage, a content page for The Jolly Bar and a
 content page for West Oak Deli.
-
-![picture](screenshots/homepage.png)
 
 We'd like you to add a listing page of meals to the site. You'll first need to register a post type called `meal` and
 an associated taxonomy called `meal-type`. Content and assets for these are already in the database so they should show up
@@ -64,19 +61,26 @@ We would like you to create a listing page for meals that satisfies these requir
 
 Reference images:
 
-![picture](screenshots/meals-listing.png)
-
-Meals listing
-
-![picture](screenshots/meals-listing-page-2.png)
-
-Meals listing - page 2
-
-![picture](screenshots/meals-listing-vegan.png)
-
-Meals listing - filtered by vegan meal type
-
-[Meals listing - small screen size](screenshots/meals-listing-mobile.png)
+- [Homepage](screenshots/homepage.png)
+- [Meals listing](screenshots/meals-listing.png)
+- [Meals listing - page 2](screenshots/meals-listing-page-2.png)
+- [Meals listing - filtered by vegan meal type](screenshots/meals-listing-vegan.png)
+- [Meals listing - small screen size](screenshots/meals-listing-mobile.png)
 
 
 
+## Build Process Notes
+
+### Styles
+
+The build task will compile SCSS files, with any file in the root of the styles directory used as a source.
+The [Include Media](https://include-media.com/) library is included to help with defining breakpoints. The
+files in the project follow a BEM-like syntax, but we're really just looking for you to create some well-crafted components.
+It also runs [Autoprefixer](https://github.com/postcss/autoprefixer) so you don't need to worry about vendor prefixing.
+
+
+### Scripts
+
+This build task will likewise process any file in the root of the scripts directory as a source. It will be
+run through [Webpack](https://webpack.js.org/) and [Babel](https://babeljs.io/), so files will be modularised and
+ES2015 features like native imports and classes are supported. 
