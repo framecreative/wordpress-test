@@ -1,0 +1,45 @@
+
+
+@mixin t-upper {
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.t-base {
+  font-family: "english-grotesque", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  line-height: 1.5;
+}
+
+.t-heading {
+  font-size: 2rem;
+  line-height: 1.1;
+  font-weight: 500;
+  @include t-upper;
+}
+
+.t-subheading {
+  font-size: 1.2rem;
+  line-height: 1.1;
+  font-weight: 500;
+  @include t-upper;
+}
+
+.t-small-upper {
+  @include t-upper;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.t-center {
+  text-align: center;
+}
+
+.t-copy {
+
+  > *:not(:first-child) {
+    margin-top: 1rem;
+  }
+
+}
+

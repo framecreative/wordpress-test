@@ -1,0 +1,19 @@
+
+html {
+  font-size: 12px;
+  background-color: $c-lightgreen;
+  color: $c-darkgreen;
+
+  @include media( '>=sm' ) {
+    font-size: 14px;
+  }
+
+  @include media( '>=md' ) {
+    font-size: 16px;
+  }
+
+  @include media( '>=lg' ) {
+    font-size: 18px;
+  }
+
+}

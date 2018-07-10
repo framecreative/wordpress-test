@@ -1,0 +1,37 @@
+
+.contact_section {
+  &:not(:first-child) {
+    margin-top: 2rem;
+  }
+}
+
+.contact_menu {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: center;
+
+  > *:not(:first-child) {
+    margin-left: 2rem;
+  }
+}
+
+
+@include media('>=md') {
+
+  .contact_sections {
+    display: flex;
+    border-top: solid 1px currentColor;
+    border-bottom: solid 1px currentColor;
+  }
+
+  .contact_section {
+    width: 50%;
+    padding: 2rem;
+
+    &:not(:first-child) {
+      margin: 0;
+      border-left: solid 1px currentColor;
+    }
+  }
+
+}

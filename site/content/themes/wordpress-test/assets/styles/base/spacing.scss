@@ -1,0 +1,6 @@
+
+.s-vert-4 {
+  > *:not(:first-child) {
+    margin-top: 4rem;
+  }
+}

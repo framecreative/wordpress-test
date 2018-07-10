@@ -1,0 +1,51 @@
+
+.panel {
+  padding: 4rem 2rem;
+}
+
+.panel--light {
+  background-color: $c-chinawhite;
+  color: $c-darkgreen;
+
+  a:hover {
+    color: $c-gold;
+  }
+}
+
+.panel--dark {
+  background-color: $c-darkgreen;
+  color: $c-lightgreen;
+
+  a:hover {
+    color: $c-gold;
+  }
+}
+
+.panel_header {
+  text-align: center;
+  margin-bottom: 2rem;
+
+  > *:not(:first-child) {
+    margin-top: 1rem;
+  }
+}
+
+.panel_content {
+  max-width: 55rem;
+  margin: 0 auto;
+}
+
+
+
+@include media('>=lg') {
+
+
+  .panel {
+    padding: 6rem 2rem;
+  }
+
+  .panel_header {
+    margin-bottom: 4rem;
+  }
+
+}
