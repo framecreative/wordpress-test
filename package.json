@@ -11,7 +11,7 @@
   "license": "ISC",
   "homepage": "https://bitbucket.org/framecreative/",
   "config": {
-    "siteUrl": "http://wordpresstest.test",
+    "siteUrl": "http://westoak.test",
     "assetSource": "site/content/themes/wordpress-test/assets/",
     "assetDist": "site/content/themes/wordpress-test/built/",
     "themeFolder": "site/content/themes/wordpress-test"
